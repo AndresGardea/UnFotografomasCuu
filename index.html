@@ -9,14 +9,14 @@
     <link rel='stylesheet' type='text/css' media='screen' href='Css/parallax.css'>
 
     <!--No Minificados/Trabajar Aqui-->
-    <!--<script src="Scripts/btn.js"></script>
+    <script src="Scripts/btn.js"></script>
     <script src="Scripts/dark.js"></script>
-    <script src="Scripts/navegacion.js"></script>-->
-
-    <!--Minificados-->
+    <script src="Scripts/navegacion.js"></script>
+    
+    <!--Minificados
     <script src="Scripts/Minify/btn.min.js"></script>
     <script src="Scripts/Minify/dark.min.js"></script>
-    <script src="Scripts/Minify/navegacion.min.js"></script>
+    <script src="Scripts/Minify/navegacion.min.js"></script>-->
 
     <script src="https://kit.fontawesome.com/6d7cef546d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -34,10 +34,7 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nobile:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,12 +47,12 @@
         <header>
             <a href="#" class="logo">UnFotografomasCuu</a>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="nav" class="nav-links">
+                    <li id="cerrar"><a href="#home">Home</a></li>
+                    <li id="cerrar"><a href="#about">About</a></li>
+                    <li id="cerrar"><a href="#portfolio">Portfolio</a></li>
+                    <li id="cerrar"><a href="#services">Service</a></li>
+                    <li id="cerrar"><a href="#contact">Contact</a></li>
 
                     <button class="switch" id="switch">
                         <span><i class="fas fa-sun"></i></span>
@@ -63,21 +60,18 @@
                     </button>
 
                     <div class="Social-Mobile">
-                        <div class="box Facebook"><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                        <div class="box Instagram"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="box Twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                        <div class="box Telegram"><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></div>
-                        <div class="box WhatsApp"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
-                        <div class="box Correo"><a href="mailto:unfotografomascuu@gmail.com"><i
-                                    class="far fa-envelope"></i></a>
+                        <div class="box Facebook" id="cerrar"><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="box Instagram" id="cerrar"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                        <div class="box Twitter" id="cerrar"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                        <div class="box Telegram" id="cerrar"><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></div>
+                        <div class="box WhatsApp" id="cerrar"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+                        <div class="box Correo" id="cerrar"><a href="mailto:unfotografomascuu@gmail.com"><i class="far fa-envelope"></i></a>
                         </div>
                     </div>
                 </ul>
             </nav>
 
-            <div class="menu-btn">
+            <div class="menu-btn" id="cerrar">
                 <div class="menu-btn__burger"></div>
             </div>
 
