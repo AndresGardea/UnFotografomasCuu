@@ -373,7 +373,8 @@ header.sticky {
 }
 
 .MobileContainer p {
-    line-height: 1.5em;
+    line-height: 1,3em;
+    font-size: 1.2rem;
     color: #fff;
 }
 
@@ -447,6 +448,10 @@ header.sticky {
     text-align: justify;
     height: 80%;
     margin-bottom: 5vh;
+}
+
+.text-part p {
+    font-size: 1.2rem;
 }
 
 .about-area {
