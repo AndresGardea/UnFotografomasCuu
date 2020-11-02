@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #262626;
 }
 
@@ -79,7 +79,7 @@ header {
 }
 
 header.sticky {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 header .logo {
@@ -353,7 +353,7 @@ header.sticky {
 
 /*Parrallax Movil*/
 
-.MobileContainer  {
+.MobileContainer {
     padding: 1.5rem;
     height: 30vh;
     width: 100%;
@@ -373,7 +373,7 @@ header.sticky {
 }
 
 .MobileContainer p {
-    line-height: 1,3em;
+    line-height: 1, 3em;
     font-size: 1.2rem;
     color: #fff;
 }
@@ -385,7 +385,7 @@ header.sticky {
     font-weight: 600;
 }
 
-.titulo{
+.titulo {
     color: #fff;
 }
 
@@ -400,7 +400,7 @@ header.sticky {
     margin-top: 25rem;
 }
 
-.ParallaxMobile{
+.ParallaxMobile {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -413,7 +413,6 @@ header.sticky {
     width: 100%;
     height: auto;
 }
-
 
 .ParallaxMobile {
     top: 5rem;
@@ -428,8 +427,6 @@ header.sticky {
         top: 0;
     }
 }
-
-
 
 /*Secciones del Articulo*/
 
@@ -473,7 +470,6 @@ header.sticky {
     color: #fff;
 }
 
-
 /* Galeria del Portafolio*/
 
 .port-area .Galeria {
@@ -490,35 +486,21 @@ header.sticky {
     flex-direction: column;
     background: rgba(200, 200, 200, 0.6);
     color: #333;
+    height: 80vh;
 }
 
 .port-area .Galeria .card:nth-child(even) {
     flex-direction: column-reverse;
 }
 
-.port-area .Galeria .card .imgBx {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background: #000;
-}
-
-.port-area .Galeria .card .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .port-area .Galeria .card .content {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 40vh;
     display: flex;
     align-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .port-area .Galeria .card .content div {
@@ -528,82 +510,37 @@ header.sticky {
 }
 
 .port-area .Galeria .text-part {
-    margin-top: 10vh;
-}
-
-.port-area .Galeria {
-    margin-bottom: 10vh;
-}
-
-@media(min-width: 1281px) {
-    .port-area .Galeria {
-        width: 100%;
-    }
-}
-
-@media(max-width: 1280px) {
-    .port-area .Galeria {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-    .port-area .Galeria .card {
-        flex-direction: row;
-        margin: 2.5vh 0;
-    }
-    .port-area .Galeria .card:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    .port-area .Galeria .card .imgBx {
-        width: 50%;
-    }
-    .port-area .Galeria .card .content {
-        width: 50%;
-    }
-}
-
-@media(max-width: 1080px) {
-    .port-area .Galeria .card {
-        flex-direction: column;
-    }
-    .port-area .Galeria .card:nth-child(even) {
-        flex-direction: column;
-    }
-    .port-area .Galeria .card .imgBx {
-        width: 100%;
-    }
-    .port-area .Galeria .card .content {
-        width: 100%;
-        height: 200px;
-    }
-    .port-area .Galeria .card .content div {
-        padding: 30px;
-        text-align: center;
-        font-size: 1rem;
-    }
+    margin-top: 5rem;
 }
 
 /*Secciones de Relleno*/
 
-.Home{
+.Home {
     height: 4.99rem;
     background: #fff;
 }
 
 .ZonaGris {
+    position: relative;
+    display: block;
     min-height: 5rem;
     background: #262626;
+    z-index: 3;
 }
 
 .ZonaBlanca {
+    position: relative;
+    display: block;
     min-height: 5rem;
     background: #fff;
+    z-index: 3;
 }
 
 @media(min-width: 1281px) {
-    .Home{
+    .Home {
         height: 0px;
     }
 }
-
 
 /*Footer*/
 
@@ -708,12 +645,236 @@ header.sticky {
         color: #fff;
         text-decoration: none;
     }
-
     .box:hover {
         flex-grow: 4;
         max-width: 100%;
     }
 }
 
+/*Info de Imagenes*/
 
-/*Parallax Movil*/
+.port-area .Galeria .card .container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.port-area .Galeria .card .container .box {
+    transition: 0.5s;
+    height: 40vh;
+    width: 100%;
+}
+
+.port-area .Galeria .card .container .box:hover {
+    z-index: 2;
+    transform: scale(1.10);
+    box-shadow: 0 25px 40px rgba(50, 50, 50, 0.2);
+}
+
+.port-area .Galeria .card .container .box .imgBx {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.port-area .Galeria .card .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, #262626, #000);
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+
+.port-area .Galeria .card .container .box:hover .imgBx:before {
+    opacity: 1;
+}
+
+.port-area .Galeria .card .container .box .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.port-area .Galeria .card .container .box .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 20px;
+}
+
+.port-area .Galeria .card .container .box .info h2 {
+    color: #fff;
+    transition: 0.6s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    transform: translateY(20rem);
+    opacity: 0;
+}
+
+.port-area .Galeria .card .container .box:hover .info h2 {
+    transform: translateY(0);
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+
+.port-area .Galeria .card .container .box .info p {
+    color: #fff;
+    transition: 0.6s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    transform: translateY(20rem);
+    opacity: 0;
+}
+
+.port-area .Galeria .card .container .box:hover .info p {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+.port-area .Galeria .card .container .box .info .btn {
+    position: absolute;
+    right: 8%;
+    top: 84%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+}
+
+.port-area .Galeria .card .container .box .info .btn button {
+    background: none;
+    color: #ccc;
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid #8B0000;
+    border-radius: 4px;
+    transition: .5s;
+    overflow: hidden;
+    font-size: 12px;
+
+}
+
+.port-area .Galeria .card .container .box .info .btn button:focus {
+    outline: none;
+    opacity: 0;
+}
+
+
+.port-area .Galeria .card .container .box .info .btn button:hover {
+    background: #8B0000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.port-area .Galeria .card .container .box:hover .info .btn {
+    position: absolute;
+    right: 8%;
+    top: 84%;
+    transform: translate(-50% -50%);
+    opacity: 1;
+}
+
+.port-area .Galeria .card .container .box:hover .info .btn button {
+    background: none;
+    color: #ccc;
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid #8B0000;
+    border-radius: 4px;
+    transition: .5s;
+    overflow: hidden;
+    opacity: 1;
+    font-size: 12px;
+}
+
+.port-area .Galeria .card .container .box:hover .info .btn button:focus {
+    outline: none;
+    opacity: 1;
+}
+
+
+.port-area .Galeria .card .container .box:hover .info .btn button:hover {
+    background: #8B0000;
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media(min-width: 1281px) {
+    .port-area .Galeria {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 1280px) {
+    .port-area .Galeria {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .port-area .Galeria .card {
+        flex-direction: row;
+        margin: 2.5vh 0;
+    }
+    .port-area .Galeria .card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .port-area .Galeria .card .content {
+        width: 50%;
+        height: 100%;
+    }
+    .port-area .Galeria .card .container {
+        width: 50%;
+        height: 100%;
+    }
+    .port-area .Galeria .card .container .box {
+        height: 100%;
+    }
+}
+
+@media(max-width: 1080px) {
+    .port-area .Galeria .card {
+        flex-direction: column;
+        min-height: 60vh;
+    }
+    .port-area .Galeria .card:nth-child(even) {
+        flex-direction: column;
+    }
+    .port-area .Galeria .card .container {
+        height: 35vh;
+        width: 100%;
+    }
+    .port-area .Galeria .card .container .box {
+        height: 100%;
+    }
+    .port-area .Galeria .card .container .box .imgBx {
+        width: 100%;
+    }
+    .port-area .Galeria .card .container .box .imgBx img {
+        width: 100%;
+    }
+    .port-area .Galeria .card .content {
+        width: 100%;
+        height: 25vh;
+    }
+    .port-area .Galeria .card .content div {
+        padding: 30px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
