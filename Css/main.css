@@ -44,6 +44,7 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
+    text-decoration: none;
 }
 
 p {
@@ -805,7 +806,6 @@ header.sticky {
 }
 
 .port-area .Galeria .card .container .box:hover .info .btn button a {
-    text-decoration: none;
     color: #fff;
 }
 
