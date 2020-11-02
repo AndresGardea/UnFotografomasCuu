@@ -804,6 +804,11 @@ header.sticky {
     font-size: 12px;
 }
 
+.port-area .Galeria .card .container .box:hover .info .btn button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .port-area .Galeria .card .container .box:hover .info .btn button:focus {
     outline: none;
     opacity: 1;
