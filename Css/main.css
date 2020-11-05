@@ -354,18 +354,18 @@ header.sticky {
 
 /*Parrallax Movil*/
 
-.MobileContainer {
+.Parallax {
     padding: 1.5rem;
     height: 30vh;
     width: 100%;
 }
 
-.MobileContainer:first-child {
+.Parallax:first-child {
     display: grid;
     grid-template-rows: 10% 30% auto;
 }
 
-.MobileContainer h1 {
+.Parallax h1 {
     text-align: center;
     margin-top: 2rem;
     font-weight: normal;
@@ -373,13 +373,13 @@ header.sticky {
     line-height: 0.9em;
 }
 
-.MobileContainer p {
+.Parallax p {
     line-height: 1, 3em;
     font-size: 1.2rem;
     color: #fff;
 }
 
-.MobileContainer h2 {
+.Parallax h2 {
     color: white;
     font-size: 3em;
     margin: 0;
@@ -429,6 +429,29 @@ header.sticky {
     }
 }
 
+/*Parallax Web*/
+@media(min-width: 1281px){
+    .Parallax {
+        height: 20vh;
+    }
+    
+    .Parallax h1 {
+        margin-top: 20rem;
+    }
+    .Parallax h3 {
+        font-size: 1.3rem;
+    }
+    
+    .secondary {
+        margin-top: 50rem;
+    }
+
+    .ParallaxTxt{
+        margin: 0% 15%;
+    }
+}
+
+
 /*Secciones del Articulo*/
 
 .about-area, .port-area, .service-area, .contact-area {
@@ -436,19 +459,21 @@ header.sticky {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     display: grid;
     grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
 }
 
 .text-part {
     grid-column: 3/19;
+    align-self: baseline;
     text-align: justify;
-    height: 80%;
-    margin-bottom: 5vh;
+    height: auto;
+    padding: 3rem 0;
 }
 
 .text-part p {
+    margin-top: 1rem;
     font-size: 1.2rem;
 }
 
@@ -459,7 +484,6 @@ header.sticky {
 .port-area {
     background-color: #262626;
     color: #fff;
-    padding-top: 10vh;
 }
 
 .service-area {
@@ -479,6 +503,7 @@ header.sticky {
     grid-column: 3/19;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 1rem;
 }
 
 .port-area .Galeria .card {
@@ -519,6 +544,22 @@ header.sticky {
 .Home {
     height: 4.99rem;
     background: #fff;
+}
+
+.ZonaInicio {
+    position: relative;
+    display: block;
+    min-height: 5rem;
+    background: #8B0000;
+    z-index: 3;
+}
+
+.PortBottom{
+    position: relative;
+    display: block;
+    min-height: 4rem;
+    background: #262626;
+    z-index: 3;
 }
 
 .ZonaGris {
