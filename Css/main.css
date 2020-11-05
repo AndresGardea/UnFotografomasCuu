@@ -381,8 +381,8 @@ header.sticky {
 
 .Parallax h2 {
     color: white;
-    font-size: 3em;
-    margin: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
@@ -438,6 +438,7 @@ header.sticky {
     .Parallax h1 {
         margin-top: 20rem;
     }
+
     .Parallax h3 {
         font-size: 1.3rem;
     }
