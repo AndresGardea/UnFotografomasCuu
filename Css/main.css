@@ -381,7 +381,7 @@ header.sticky {
 
 .Parallax h2 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
     font-weight: 600;
 }
@@ -416,7 +416,7 @@ header.sticky {
 }
 
 .ParallaxMobile {
-    top: 5rem;
+    top: 4.9rem;
 }
 
 .trees {
@@ -581,7 +581,7 @@ header.sticky {
 
 @media(min-width: 1281px) {
     .Home {
-        height: 0px;
+        height: 0.1rem;
     }
 }
 
@@ -677,6 +677,12 @@ header.sticky {
         display: flex;
         box-sizing: border-box;
     }
+
+    .iconMobile{
+        color: #fff;
+    }
+    
+
     .Social-Mobile .box {
         width: auto;
         text-align: center;
@@ -691,6 +697,10 @@ header.sticky {
     .box:hover {
         flex-grow: 4;
         max-width: 100%;
+    }
+
+    .box i{
+        padding: 2rem 0;
     }
 }
 
