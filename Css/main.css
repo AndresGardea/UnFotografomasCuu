@@ -683,7 +683,7 @@ header.sticky {
     }
     
 
-    .Social-Mobile .box {
+    .Social-Mobile .smb {
         width: auto;
         text-align: center;
         flex-grow: 1;
@@ -694,13 +694,14 @@ header.sticky {
         color: #fff;
         text-decoration: none;
     }
-    .box:hover {
+    .smb:hover {
         flex-grow: 4;
         max-width: 100%;
     }
 
-    .box i{
+    .smb i{
         padding: 2rem 0;
+        width: 100%;
     }
 }
 
@@ -811,6 +812,7 @@ header.sticky {
     opacity: 0;
 }
 
+
 .port-area .Galeria .card .container .box .info .btn button {
     background: none;
     color: #ccc;
@@ -847,7 +849,7 @@ header.sticky {
 .port-area .Galeria .card .container .box:hover .info .btn button {
     background: none;
     color: #ccc;
-    width: 5rem;
+    width: 6rem;
     height: 2rem;
     border: 1px solid #8B0000;
     border-radius: 4px;
@@ -857,9 +859,16 @@ header.sticky {
     font-size: 12px;
 }
 
+.port-area .Galeria .card .container .box .info .btn button i {
+    color: #cccccc;
+    padding: 0 0;
+}
+
 .port-area .Galeria .card .container .box:hover .info .btn button a {
     color: #fff;
+    padding: 0 0;
 }
+
 
 .port-area .Galeria .card .container .box:hover .info .btn button:focus {
     outline: none;
