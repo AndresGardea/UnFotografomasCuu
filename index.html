@@ -7,20 +7,22 @@
     <title>UnFotografoMasCuu</title>
     <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
 
-    <!--No Minificados/Trabajar Aqui-->
+    <!--No Minificados/Trabajar Aqui
     <script src="Scripts/btn.js"></script>
     <script src="Scripts/dark.js"></script>
     <script src="Scripts/navegacion.js"></script>
+    <script src="Scripts/lax.js"></script>-->
 
-    <!--Minificados
+    <!--Minificados-->
     <script src="Scripts/Minify/btn.min.js"></script>
     <script src="Scripts/Minify/dark.min.js"></script>
-    <script src="Scripts/Minify/navegacion.min.js"></script>-->
+    <script src="Scripts/Minify/navegacion.min.js"></script>
+    <script src="Scripts/Minify/lax.min.js"></script>
 
     <script src="https://kit.fontawesome.com/6d7cef546d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-45JTFYDDDV"></script>
@@ -47,13 +49,15 @@
 
         <header>
             <a href="#" class="logo">UnFotografomasCuu</a>
-            <nav>
+            <nav class="mnvl">
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <div class="nvc">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
 
                     <button class="switch" id="switch">
                         <span><i class="fas fa-sun"></i></span>
@@ -61,14 +65,20 @@
                     </button>
 
                     <div class="Social-Mobile">
-                        <div class="smb Facebook"><a class="iconMobile" href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <div class="smb Facebook"><a class="iconMobile" href="#" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a>
                         </div>
-                        <div class="smb Instagram"><a class="iconMobile" href="https://t.co/XdIwIDNkr3?amp=1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <div class="smb Instagram"><a class="iconMobile" href="https://t.co/XdIwIDNkr3?amp=1"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="smb Twitter"><a class="iconMobile" href="https://twitter.com/unfotografocuu?s=08" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                        <div class="smb Telegram"><a class="iconMobile" href="https://t.me/andres_gardea" target="_blank"><i class="fab fa-telegram"></i></a></div>
-                        <div class="smb WhatsApp"><a class="iconMobile" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
-                        <div class="smb Correo"><a class="iconMobile" href="mailto:unfotografomascuu@gmail.com"><i class="far fa-envelope"></i></a>
+                        <div class="smb Twitter"><a class="iconMobile" href="https://twitter.com/unfotografocuu?s=08"
+                                target="_blank"><i class="fab fa-twitter"></i></a></div>
+                        <div class="smb Telegram"><a class="iconMobile" href="https://t.me/andres_gardea"
+                                target="_blank"><i class="fab fa-telegram"></i></a></div>
+                        <div class="smb WhatsApp"><a class="iconMobile" href="#" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a></div>
+                        <div class="smb Correo"><a class="iconMobile" href="mailto:unfotografomascuu@gmail.com"><i
+                                    class="far fa-envelope"></i></a>
                         </div>
                     </div>
                 </ul>
@@ -109,9 +119,12 @@
 
         <div class="Social-Bar">
             <a href="#" class="icon Facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="icon Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" class=" icon Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://t.co/XdIwIDNkr3?amp=1" class="icon Instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/unfotografocuu?s=08" class=" icon Twitter" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://t.me/andres_gardea" class="icon Telegram" target="_blank"><i
+                    class="fab fa-telegram"></i></a>
             <a href="#" class="icon WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:unfotografomascuu@gmail.com" class="icon Correo"><i class="far fa-envelope"></i></a>
         </div>
@@ -121,7 +134,7 @@
         <section class="about-area">
             <div class="text-part">
                 <h1 class="anim">
-                    About Area</h1>
+                    Hacerca de Mi</h1>
                 <p class="anim">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est
                     nobis
@@ -147,9 +160,12 @@
                     sequi
                     similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
                     molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p>
+                <div class="btn-port">
+                    <button class="button-port"><a href="">Completo</a></button>
+                </div>
             </div>
+            
             <div class="Galeria">
-                
                 <div class="card">
                     <div class="container">
                         <div class="box">
@@ -166,7 +182,9 @@
                                         Dimensiones: 6000x4000<br>
                                     </p>
                                     <div class="btn">
-                                        <button type="button"><a href="https://drive.google.com/drive/folders/1C639BtnYGpNYXZWHHgR0ac4lQH4V_-fY?usp=sharing" target="_black"><i class="fab fa-google-drive"></i>   Drive</a></button>
+                                        <button type="button"><a
+                                                href="https://drive.google.com/drive/folders/1C639BtnYGpNYXZWHHgR0ac4lQH4V_-fY?usp=sharing"
+                                                target="_black"><i class="fab fa-google-drive"></i> Drive</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +217,9 @@
                                         Dimensiones: 5328x4000<br>
                                     </p>
                                     <div class="btn">
-                                        <button type="button"><a href="https://drive.google.com/drive/folders/1aon2wQIZs_SNB-IEtHvUrYw3zS9OOd5f?usp=sharing" target="_black"><i class="fab fa-google-drive"></i>   Drive</a></button>
+                                        <button type="button"><a
+                                                href="https://drive.google.com/drive/folders/1aon2wQIZs_SNB-IEtHvUrYw3zS9OOd5f?usp=sharing"
+                                                target="_black"><i class="fab fa-google-drive"></i> Drive</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +228,8 @@
                     <div class="content">
                         <div>
                             <h3>Astrofotografia</h3>
-                            <p>Tomada con un lente 55-250 es de la primeras fotos que tome a la luna y por asi decirlo mi inicio a la Astrofotografia.</p>
+                            <p>Tomada con un lente 55-250 es de la primeras fotos que tome a la luna y por asi decirlo
+                                mi inicio a la Astrofotografia.</p>
                         </div>
                     </div>
                 </div>
@@ -229,7 +250,7 @@
                                         Dimensiones: 6000x4000<br>
                                     </p>
                                     <div class="btn">
-                                        <button type="button"><i class="fab fa-google-drive"></i>   Drive</button>
+                                        <button type="button"><i class="fab fa-google-drive"></i> Drive</button>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +282,7 @@
                                         vel provident.
                                     </p>
                                     <div class="btn">
-                                        <button type="button"><i class="fab fa-google-drive"></i>   Drive</button>
+                                        <button type="button"><i class="fab fa-google-drive"></i> Drive</button>
                                     </div>
                                 </div>
                             </div>
@@ -337,16 +358,18 @@
             header.classList.toggle("sticky", window.scrollY > 150)
         })
 
-
         window.sr = ScrollReveal();
         sr.reveal('.anim');
 
+        window.onload = function () {
+            lax.setup() // init
 
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
 
-        if ('loading' in HTMLImageElement.prototype) {
-            console.log('El navegador soporta `lazy-loading`...');
-        } else {
-            console.log('`lazy-loading` no soportado...');
+            window.requestAnimationFrame(updateLax)
         }
 
         window.onload = function () {
@@ -364,7 +387,6 @@
         BtnAnim();
         DarkMode();
     </script>
-
 
 </body>
 
