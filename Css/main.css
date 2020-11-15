@@ -104,6 +104,12 @@ header .nav-links {
     justify-content: center;
     align-items: center;
 }
+header .nvc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 header .nav-links li {
     position: relative;
@@ -222,6 +228,7 @@ header.sticky {
     body {
         overflow-x: hidden;
     }
+    
     .menu-btn {
         position: relative;
         display: flex;
@@ -260,7 +267,7 @@ header.sticky {
         height: 2px;
         width: 40px;
     }
-    /*Lo mismo de arriba que no puedo arregalar evitando que el script agregue el .sticky por wey*/
+    /*Lo mismo de arriba que no puedo arregalar evitando que el script agregue el .sticky por wey*/ /*Sticky Movil*/
     header, header.sticky {
         max-height: 5rem;
         background: rgba(255, 255, 255, 0.85);
@@ -270,6 +277,13 @@ header.sticky {
     }
     header .menu-btn__burger, header .menu-btn__burger::before, header .menu-btn__burger::after {
         background: #222;
+    }
+    header .nvc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
     header .nav-links li {
         width: 100%;
@@ -471,6 +485,7 @@ header.sticky {
     text-align: justify;
     height: auto;
     padding: 3rem 0;
+    margin-bottom: 5rem;
 }
 
 .text-part p {
@@ -882,6 +897,43 @@ header.sticky {
     opacity: 1;
 }
 
+/* Boton del Portafolio*/
+.port-area .text-part .btn-port {
+    position: absolute;
+    right: 10%;
+    margin-top: 2rem;
+}
+
+
+.port-area .text-part .btn-port button {
+    background: none;
+    color: #ccc;
+    width: 8rem;
+    height: 2.5rem;
+    border: 1px solid #8B0000;
+    border-radius: 4px;
+    transition: .5s;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.port-area .text-part .btn-port button:hover {
+    background: #8B0000;
+    cursor: pointer;
+}
+
+
+.port-area .text-part .btn-port button i {
+    color: #cccccc;
+    padding: 0 0;
+}
+
+.port-area .text-part .btn-port button a {
+    color: #fff;
+    padding: 0 0;
+}
+
+/*Galeria Responsive*/
 @media(min-width: 1281px) {
     .port-area .Galeria {
         width: 100%;
