@@ -2,7 +2,7 @@ const NavSlide = () => {
     const menuBtn = document.querySelector('.menu-btn'); //Boton Hamburguesa
     const nav = document.querySelector('.nav-links'); //Toda la barra de Navegacion
     const navLinks = document.querySelectorAll('.nav-links'); //Para la animacion de los links
-    const navSection = document.querySelector('.nav-links'); //Cerrar la barra de navegacion con los liks
+    const navSection = document.querySelector('.nvc'); //Cerrar la barra de navegacion con los liks
     const socialMedia = document.querySelector('.Social-Mobile'); //Hacer que ciere la Navegacion
 
     //Activar Barra de Navegacion
@@ -28,10 +28,10 @@ const NavSlide = () => {
         menuOpen = false;
     });
 
+
     socialMedia.addEventListener('click' , () => {
         nav.classList.toggle('nav-active');
         menuBtn.classList.toggle('open');
         menuOpen = false;
     })
-
 }
