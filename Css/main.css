@@ -104,7 +104,8 @@ header .nav-links {
     justify-content: center;
     align-items: center;
 }
-header .nvc{
+
+header .nvc {
     position: relative;
     display: flex;
     justify-content: center;
@@ -228,7 +229,6 @@ header.sticky {
     body {
         overflow-x: hidden;
     }
-    
     .menu-btn {
         position: relative;
         display: flex;
@@ -267,7 +267,8 @@ header.sticky {
         height: 2px;
         width: 40px;
     }
-    /*Lo mismo de arriba que no puedo arregalar evitando que el script agregue el .sticky por wey*/ /*Sticky Movil*/
+    /*Lo mismo de arriba que no puedo arregalar evitando que el script agregue el .sticky por wey*/
+    /*Sticky Movil*/
     header, header.sticky {
         max-height: 5rem;
         background: rgba(255, 255, 255, 0.85);
@@ -278,7 +279,7 @@ header.sticky {
     header .menu-btn__burger, header .menu-btn__burger::before, header .menu-btn__burger::after {
         background: #222;
     }
-    header .nvc{
+    header .nvc {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -444,28 +445,24 @@ header.sticky {
 }
 
 /*Parallax Web*/
-@media(min-width: 1281px){
+
+@media(min-width: 1281px) {
     .Parallax {
         height: 20vh;
     }
-    
     .Parallax h1 {
         margin-top: 20rem;
     }
-
     .Parallax h3 {
         font-size: 1.3rem;
     }
-    
     .secondary {
         margin-top: 50rem;
     }
-
-    .ParallaxTxt{
+    .ParallaxTxt {
         margin: 0% 15%;
     }
 }
-
 
 /*Secciones del Articulo*/
 
@@ -481,11 +478,12 @@ header.sticky {
 
 .text-part {
     grid-column: 3/19;
+    display: block;
     align-self: baseline;
+    z-index: 1;
     text-align: justify;
-    height: auto;
+    min-height: 40vh;
     padding: 3rem 0;
-    margin-bottom: 5rem;
 }
 
 .text-part p {
@@ -570,7 +568,7 @@ header.sticky {
     z-index: 3;
 }
 
-.PortBottom{
+.PortBottom {
     position: relative;
     display: block;
     min-height: 4rem;
@@ -692,12 +690,9 @@ header.sticky {
         display: flex;
         box-sizing: border-box;
     }
-
-    .iconMobile{
+    .iconMobile {
         color: #fff;
     }
-    
-
     .Social-Mobile .smb {
         width: auto;
         text-align: center;
@@ -713,8 +708,7 @@ header.sticky {
         flex-grow: 4;
         max-width: 100%;
     }
-
-    .smb i{
+    .smb i {
         padding: 2rem 0;
         width: 100%;
     }
@@ -819,6 +813,7 @@ header.sticky {
     transition-delay: 0.5s;
     opacity: 1;
 }
+
 .port-area .Galeria .card .container .box .info .btn {
     position: absolute;
     right: 8%;
@@ -826,7 +821,6 @@ header.sticky {
     transform: translate(-50% -50%);
     opacity: 0;
 }
-
 
 .port-area .Galeria .card .container .box .info .btn button {
     background: none;
@@ -838,14 +832,12 @@ header.sticky {
     transition: .5s;
     overflow: hidden;
     font-size: 12px;
-
 }
 
 .port-area .Galeria .card .container .box .info .btn button:focus {
     outline: none;
     opacity: 0;
 }
-
 
 .port-area .Galeria .card .container .box .info .btn button:hover {
     background: #8B0000;
@@ -884,12 +876,10 @@ header.sticky {
     padding: 0 0;
 }
 
-
 .port-area .Galeria .card .container .box:hover .info .btn button:focus {
     outline: none;
     opacity: 1;
 }
-
 
 .port-area .Galeria .card .container .box:hover .info .btn button:hover {
     background: #8B0000;
@@ -898,12 +888,13 @@ header.sticky {
 }
 
 /* Boton del Portafolio*/
+
 .port-area .text-part .btn-port {
     position: absolute;
     right: 10%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-
 
 .port-area .text-part .btn-port button {
     background: none;
@@ -922,7 +913,6 @@ header.sticky {
     cursor: pointer;
 }
 
-
 .port-area .text-part .btn-port button i {
     color: #cccccc;
     padding: 0 0;
@@ -934,6 +924,7 @@ header.sticky {
 }
 
 /*Galeria Responsive*/
+
 @media(min-width: 1281px) {
     .port-area .Galeria {
         width: 100%;
@@ -998,3 +989,234 @@ header.sticky {
         font-size: 1rem;
     }
 }
+
+/* Galeria del Portafolio*/
+
+.sesion {
+    grid-column: 3/19;
+    min-height: 70vh;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5rem;
+
+}
+
+.sesion .gap {
+    width: 100%;
+    min-height: 35vh;
+    z-index: 1;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    align-self: baseline;
+}
+
+.gap .left, .gap .middle, .gap .right {
+    min-height: 35vh;
+    width: 100%;
+    display: block;
+    color: #fff;
+    box-sizing: border-box;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+    -moz-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+}
+
+
+@media (min-width: 480px) {
+    .about-area .gap .left .content, .about-area .gap .middle .content, .about-area .gap .right .content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 480px) {
+    .about-area .gap .left, .about-area .gap .middle, .about-area .gap .right {
+        width: 50%;
+        font-size: 0.9em;
+        padding: 10px;
+        left: 0;
+        float: left;
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-area .gap .left, .about-area .gap .middle, .about-area .gap .right {
+        width: 33.33333%;
+        left: 33.33%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-area .gap .left, .about-area .gap .middle, .about-area .gap .right {
+        padding: 30px;
+        font-size: 1em;
+    }
+}
+
+.about-area .gap.animate .left {
+    left: 0;
+}
+
+@media (min-width: 480px) {
+    .about-area .gap.animate .left {
+        left: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-area .gap.animate .left {
+        left: 0;
+    }
+}
+
+.about-area .gap.animate .right {
+    left: 0;
+}
+
+@media (min-width: 480px) {
+    .about-area .gap.animate .right {
+        left: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-area .gap.animate .right {
+        left: 66.66%;
+    }
+}
+/*Propiedades gap*/
+.about-area .gap .title {
+    background: rgba(68, 80, 255, 0.6);
+}
+
+.about-area .gap .title h2 {
+    margin-top: 0;
+}
+
+.about-area .gap .title p {
+    line-height: 1.55em;
+    margin-bottom: 0.75em;
+}
+
+.about-area .gap .tiles {
+    min-height: 35vh;
+    padding: 0;
+    background: #fff;
+    clear: both;
+    display: none;
+    float: none;
+}
+
+.about-area .gap .tiles img {
+    width: 50%;
+    float: left;
+    height: 17.5vh;
+    transition: 0.3s ease-in-out all;
+}
+
+.about-area .gap .tiles img:hover {
+    z-index: 2;
+    transform: scale(1.30);
+    box-shadow: 0 25px 40px rgba(50, 50, 50, 0.2);
+}
+
+@media (min-width: 768px) {
+    .about-area .gap .tiles {
+        display: block;
+    }
+}
+
+.about-area .gap .middle {
+    z-index: 2;
+    padding: 0;
+}
+
+.gap .middle img {
+    width: 100%;
+    height: 35vh;
+    display: block;
+    object-fit: cover;
+}
+.about-area .gap .middle:hover {
+    z-index: 2;
+    transform: scale(1.10);
+    box-shadow: 0 25px 40px rgba(50, 50, 50, 0.2);
+}
+
+.about-area .gap .middle .img-middle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-area .gap .middle .img-middle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, #262626, #000);
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+
+.about-area .gap .middle:hover .img-middle:before {
+    opacity: 1;
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+    }
+    60% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.port-area .Galeria .card .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, #262626, #000);
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+
+.port-area .Galeria .card .container .box:hover .imgBx:before {
+    opacity: 1;
+}
+
