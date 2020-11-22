@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #262626;
 }
 
 h1 {
@@ -636,7 +636,11 @@ header.sticky {
     margin-top: 5rem;
 }
 
-/*Secciones de Relleno*/
+/*Secciones del Articulo*/
+
+.Articulo{
+    background: #fff;
+}
 
 .Home {
     height: 4.99rem;
