@@ -12,51 +12,71 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Titulo;
+    src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: SubTitulo;
+    src: url(../Fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Texto;
+    src: url(../Fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Links;
+    src: url(../Fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
 body {
-    background: #262626;
+    background: #fff;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Titulo';
     font-size: 2rem;
     font-weight: 500;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Subtitulo';
     font-size: 1.7rem;
     font-weight: 700;
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Texto';
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 time {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Texto';
     font-size: 1.2rem;
     font-weight: 200;
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Links';
+    font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Texto';
     font-size: 1rem;
     font-weight: 300;
 }
 
 .preloader-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Titulo',;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @media (max-width: 8.5in) {
@@ -107,6 +127,7 @@ p {
 
 .pace.pace-inactive {
     display: none;
+    z-index: -20;
 }
 
 #preloader {
@@ -720,8 +741,8 @@ header.sticky {
     background: #4995Be;
 }
 
-.WhatsApp {
-    background: #25d366;
+.GitHub {
+    background: #171515;
 }
 
 .Correo {
@@ -949,13 +970,11 @@ header.sticky {
     opacity: 1;
 }
 
-/* Boton del Portafolio*/
+/* Boton del Portafolio Parte del Texto*/
 
 .port-area .text-part .btn-port {
-    position: absolute;
-    right: 10%;
+    width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .port-area .text-part .btn-port button {
@@ -975,15 +994,10 @@ header.sticky {
     cursor: pointer;
 }
 
-.port-area .text-part .btn-port button i {
-    color: #cccccc;
-    padding: 0 0;
-}
-
 .port-area .text-part .btn-port button a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
-    padding: 1.5rem 1.8rem;
+    width: auto;
 }
 
 /*Galeria Responsive*/
