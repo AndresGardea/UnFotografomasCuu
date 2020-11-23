@@ -7,7 +7,7 @@
     <title>UnFotografoMasCuu</title>
     <!--<link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>-->
 
-    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.min.css'>
 
     <!--No Minificados/Trabajar Aqui
     <script src="Scripts/btn.js"></script>
@@ -98,8 +98,7 @@
 
     </div>
 
-    <div class="Articulo">
-
+    <div class="Parallax_Container">
         <div class="Parallax">
             <h1 class="lax titulo" data-lax-translate-y="0 0, 400 -400">UnFotografoMasCuu</h1>
         </div>
@@ -120,21 +119,11 @@
             data-lax-translate-y="0 1, 400 -120">
         <img loading="lazy" src="Multimedia/Arbol.webp" alt="Mountains" class="trees lax"
             data-lax-translate-y="0 1, 400 -260">
+    </div>
+    
+    <div class="Articulo">
 
-
-
-        <div class="Social-Bar">
-            <a href="#" class="icon Facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://t.co/XdIwIDNkr3?amp=1" class="icon Instagram" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/unfotografocuu?s=08" class=" icon Twitter" target="_blank"><i
-                    class="fab fa-twitter"></i></a>
-            <a href="https://t.me/andres_gardea" class="icon Telegram" target="_blank"><i
-                    class="fab fa-telegram"></i></a>
-            <a href="https://github.com/AndresGardea/UnFotografomasCuu" class="icon GitHub" target="_blank"><i
-                    class="fab fa-github"></i></a>
-            <a href="mailto:unfotografomascuu@gmail.com" class="icon Correo"><i class="far fa-envelope"></i></a>
-        </div>
+ 
 
         <div class="ZonaBlanca" id="about"></div>
 
@@ -342,8 +331,6 @@
                     molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p>
             </div>
         </section>
-
-
     </div>
 
     <div class="Footer">
@@ -356,27 +343,29 @@
                             todas las fotos me gustaria o por flojera todas las que podria tomar si me gustaria
                             mucho aprender.</p>
                         <div class="Social-Footer">
-                            <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
-                            <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
-                            <a href="#"><span class="fab fa-twitter"></span></a>
-                            <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
-                            <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="https://twitter.com/unfotografocuu?s=08"><span class="fab fa-twitter"></span></a>
+                            <a href="https://t.co/XdIwIDNkr3?amp=1"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
                         </div>
                     </div>
                 </div>
                 <div class="center box">
                     <h1>Informacion</h1>
                     <div class="content">
-                        <div class="place">
-                            <span class="fab fa-google-drive"></span>
+                        <div class="drive_footer">
+                            <span><a class="fab fa-google-drive"
+                                    href="https://drive.google.com/drive/folders/17Upno49Bbr61Yz7B_ZA55s1FS7aL5PTa?usp=sharing"
+                                    target="_blank"></a> </span>
                             <span class="text">Todas las Fotos Originales</span>
                         </div>
-                        <div class="phone">
-                            <span class="fab fa-github"></span>
+                        <div class="github_footer">
+                            <span><a class="fab fa-github" href="https://github.com/AndresGardea/UnFotografomasCuu"
+                                    target="_blank"></a></span>
                             <span class="text">Codigo Fuente de la Pagina</span>
                         </div>
                         <div class="email">
-                            <span class="far fa-envelope"></span>
+                            <span><a class="far fa-envelope" href="mailto:unfotografomascuu@gmail.com"></a></span>
                             <span class="text">unfotografomascuu@gmail.com</span>
                         </div>
                     </div>
@@ -384,32 +373,17 @@
                 <div class="right box">
                     <h1>Contactame</h1>
                     <div class="content">
-                        <form action="#">
-                            <div class="email">
-                                <div class="text">
-                                    Email *</div>
-                                <input type="email" required>
-                            </div>
-                            <div class="msg">
-                                <div class="text">
-                                    Message *</div>
-                                <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
-                                <changeit id=".msgForm" rows="2" cols="25" required></changeit>
-                                <!-- replace this changeit name to textarea -->
-
-                                <br />
-                                <div class="btn">
-                                    <button type="submit">Send</button>
-                                </div>
-                                <div class="bottom">
-                                    <center>
-                                        <span class="credit">Andrés Gardea</span>
-                                        <span class="far fa-copyright"></span> Pagina hecha por estudiante de programacion.
-                                    </center>
-                                </div>
+                        <form action="enviar.php" method="post">
+                            <input type="text" name="nombre" placeholder="Nombre" required></input>
+                            <input type="text" name="correo" placeholder="Correo" required></input>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                            <input type="submit" valor="Enviar" id="boton_enviar"></input>
                         </form>
                     </div>
+                </div>
+            </div>
         </footer>
+
         <div class="TextoPequeño">
             <p>Pagina hecha por un estudiante de Programacion</p>
         </div>
@@ -422,6 +396,7 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 150)
         })
+
 
         window.sr = ScrollReveal();
         sr.reveal('.anim');
