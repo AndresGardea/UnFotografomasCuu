@@ -74,7 +74,7 @@ p {
 }
 
 .preloader-text {
-    font-family: 'Titulo',;
+    font-family: 'Titulo', ;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -638,7 +638,7 @@ header.sticky {
 
 /*Secciones del Articulo*/
 
-.ArticuloPortafolio{
+.ArticuloPortafolio {
     background: #fff;
 }
 
@@ -683,24 +683,6 @@ header.sticky {
     .Home {
         height: 0rem;
     }
-}
-
-/*Footer*/
-
-.SocialFooter {
-    background: #fff;
-    grid-column: 1/8;
-    height: 20rem;
-    text-align: center;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-}
-
-.TextoPequeño {
-    height: 3rem;
-    color: #fff;
-    background: #111;
-    grid-column: 1/8;
-    text-align: center;
 }
 
 /*Redes Sociales*/
@@ -1283,4 +1265,193 @@ header.sticky {
     60% {
         transform: translateY(-10px);
     }
+}
+
+/*Footer*/
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer h1 {
+    font-size: 1.45rem;
+}
+
+.FooterInfo {
+    display: flex;
+}
+
+.FooterInfo .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+
+.left .content p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.left .content .Social-Footer {
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.left .content .Social-Footer a {
+    padding: 0 2px;
+}
+
+.left .content .Social-Footer a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.left .content .Social-Footer a span:hover {
+    background: #f12020;
+}
+
+.center .content .fab, .center .content .far {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.center .content .fas:hover {
+    background: #f12020;
+}
+
+.center .content .text {
+    font-family: 'Texto';
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input, .right form .msgForm {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus, .right form .msgForm:focus {
+    outline-color: #3498db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: #000;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .FooterInfo {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .FooterInfo .box {
+        margin: 5px 0;
+    }
+}
+
+.TextoPequeño{
+    padding: 1rem;
+    color: #fff;
+    background: #111;
+    text-align: center;
+    font-size: 2rem;
 }
