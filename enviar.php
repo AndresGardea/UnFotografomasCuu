@@ -9,3 +9,4 @@ mail($destino,"Correo enviado con el Footer de la Pagina",$contenido);
 header("Location:index.html");
 
 ?>
+
